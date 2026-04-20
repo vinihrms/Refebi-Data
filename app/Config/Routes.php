@@ -1,9 +1,9 @@
 <?php
 
-use App\Controllers\HomeController;
+use App\Controllers\AppController;
 use CodeIgniter\Router\RouteCollection;
 
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', [HomeController::class, 'index'], ['as' => 'home']);
+$routes->get('/app', [AppController::class, 'index'], ['as' => 'app']);

@@ -7,6 +7,9 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
+
+
+
 /**
  * BaseController provides a convenient place for loading components
  * and performing functions that are needed by all your controllers.
@@ -30,6 +33,12 @@ abstract class BaseController extends Controller
     /**
      * @return void
      */
+
+    protected $helpers = [];
+
+    protected $dataToView = [];
+
+
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
         // Load here all helpers you want to be available in your controllers that extend BaseController.
@@ -39,6 +48,8 @@ abstract class BaseController extends Controller
         // Caution: Do not edit this line.
         parent::initController($request, $response, $logger);
 
+
+        $this->dataToView['title'] = 'Refebi Data';
         // Preload any models, libraries, etc, here.
         // $this->session = service('session');
     }
