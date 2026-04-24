@@ -1,5 +1,5 @@
-# 🧠 Sistema de Coleta e Gestão de Dados Científicos
-## Projeto Refebi - UNIOESTE
+# 🧠 Sistema de Coleta e Gestão de Dados Científicos - Rehab Data
+## Projeto BioRehab Lab - UNIOESTE
 
 ## 🎯 Proposta do Projeto
 
